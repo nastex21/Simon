@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simon</title>
+    <link rel="stylesheet" href="stylus/normalize.css">
+    <link rel="stylesheet" href="stylus/style.css">
+</head>
+<body>
+    <audio id="firstSnd">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="secondSnd">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="thirdSnd">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="fourthSnd">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+    </audio>
+    <div id="game">
+        <div class="inputs">
+             <div class="btns" id="green" value="1" onclick="playSnds(this)"></div>
+             <div class="btns" id="red" value="2" onclick="playSnds(this)"></div>
+             <div class="btns" id="yellow" value="3" onclick="playSnds(this)"></div>
+             <div class="btns" id="blue" value="4" onclick="playSnds(this)"></div>
+         </div>
+        <div id="console">
+            <div id="counter"><span></span></div>
+            <div class="press">
+                <div class="consoleBtns" id="start"><span>Start/Reset</pan></div>
+                <div class="consoleBtns" id="strict"><span>Strict</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

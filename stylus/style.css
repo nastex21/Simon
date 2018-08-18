@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+/* Older browsers */
+html {
+  font: 16px;
+}
+/* Modern browsers only need this one */
+@media screen and (min-width: 25em) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 300px) / (1080 - 300));
+  }
+}
+/* Safari <8 and IE <11 */
+@media screen and (min-width: 25em) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 300px) / (1080 - 300));
+  }
+}
+@media screen and (min-width: 50em) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 300px) / (1080 - 300));
+  }
+}
+body {
+  background-color: #6a8891;
+}
+#rules {
+  position: relative;
+  font-family: "Barlow Semi Condensed";
+  line-height: 90%;
+  height: 20%;
+  width: 20%;
+  background-color: #b9bcbd;
+  border-radius: 10px;
+  float: right;
+  font-size: 0.8em;
+  right: 1%;
+  margin-top: 5%;
+  padding: 0 2%;
+}
+#game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #393e40;
+  min-width: 300px;
+  max-width: 720px;
+  width: 40vw;
+  padding-bottom: 20%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 15px solid #393e40;
+  overflow: auto;
+}
+.inputs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-column-gap: 1.2em;
+  grid-row-gap: 1.2em;
+}
+#console {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 30%;
+  width: 30%;
+  text-align: center;
+  background-color: #e6f9ff;
+  border-radius: 50%;
+  border: 15px solid #393e40;
+  overflow: hidden;
+}
+#title {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  font-family: "Alfa Slab One";
+  color: #e1e8eb;
+  background-color: #000;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+}
+#title > span {
+  position: relative;
+  top: 30%;
+}
+#bottom {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-color: #cfcfcf;
+}
+.columns {
+  float: left;
+  width: 33.33%;
+  width: calc(100% / 3);
+}
+/* Clear floats after the columns */
+#bottom:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#counter {
+  height: 100%;
+}
+#startSec {
+  height: 100%;
+}
+#strictSec {
+  height: 100%;
+}
+#screen {
+  position: relative;
+  width: 80%;
+  height: 50%;
+  left: 10%;
+  background-color: #1e2021;
+  color: #cf2626;
+  margin-left: 3px;
+  border-radius: 10px;
+  font-family: "Orbitron";
+}
+#start {
+  position: relative;
+  background-color: #40d34e;
+  width: 40%;
+  height: 20%;
+  border-radius: 50%;
+  left: 25%;
+  border: 3px solid #484a4a;
+  cursor: pointer;
+}
+#strict {
+  position: relative;
+  background-color: #018edf;
+  width: 40%;
+  height: 20%;
+  border-radius: 50%;
+  left: 25%;
+  border: 3px solid #484a4a;
+  cursor: pointer;
+}
+.text {
+  font-size: 0.4em;
+}
+.dgrn {
+  background-color: #40d34e;
+  cursor: pointer;
+}
+.lgrn {
+  background-color: #7ae184;
+}
+.dred {
+  background-color: #fa2915;
+  cursor: pointer;
+}
+.lred {
+  background-color: #fc6c5f;
+}
+.dblue {
+  background-color: #018edf;
+  cursor: pointer;
+}
+.lblue {
+  background-color: #48bbfe;
+}
+.dylw {
+  background-color: #f4f401;
+  cursor: pointer;
+}
+.lylw {
+  background-color: #fefe5d;
+}
+#winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 40%;
+  text-align: center;
+}
+#winner > p {
+  width: 100%;
+  font-size: 1.5em;
+}
+#restart {
+  position: relative;
+  top: 20%;
+}

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+centerer()
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+
+/* Older browsers */
+html {
+  font 16px
+}
+/* Modern browsers only need this one */
+@media screen and (min-width: 25em) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 300px) / (1080 - 300));
+  }
+}
+/* Safari <8 and IE <11 */
+@media screen and (min-width: 25em) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 300px) / (1080 - 300));
+  }
+}
+@media screen and (min-width: 50em) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 300px) / (1080 - 300));
+  }
+}
+
+body 
+    background-color #6A8891
+
+#rules
+    position relative
+    font-family "Barlow Semi Condensed"
+    line-height 90%
+    height 20%
+    width 20%
+    background-color #B9BCBD
+    border-radius 10px
+    float right
+    font-size .8em
+    right 1%
+    margin-top 5%
+    padding 0 2%
+
+#game 
+    centerer()
+    background-color #393E40
+    min-width 300px
+    max-width 720px
+    width 40vw
+    padding-bottom 20%
+    border-radius 50%
+    box-sizing border-box
+    -moz-box-sizing border-box
+    -webkit-box-sizing border-box
+    border 15px solid #393e40
+    overflow auto
+
+.inputs
+    position absolute
+    width 100% 
+    height 100%
+    display grid
+    grid-template-columns repeat(2, minmax(100px, 1fr))
+    grid-column-gap 1.2em
+    grid-row-gap 1.2em
+
+#console
+    centerer()
+    height 30%
+    width 30%
+    text-align center
+    background-color #e6f9ff
+    border-radius 50%
+    border 15px solid #393E40
+    overflow hidden
+
+#title
+    position relative
+    width 100%
+    height 50%
+    font-family "Alfa Slab One"
+    color #E1E8EB
+    background-color black
+    border-top-left-radius 40%
+    border-top-right-radius 40%
+
+#title > span
+    position relative
+    top 30%
+
+#bottom 
+    position relative
+    width 100%
+    height 50%
+    background-color #CFCFCF
+
+.columns {
+    float: left;
+    width: 33.33%;
+    width: calc(100% / 3);
+}
+
+/* Clear floats after the columns */
+#bottom:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#counter 
+    height 100%
+
+#startSec
+    height 100%
+
+#strictSec 
+    height 100%
+
+#screen 
+    position relative 
+    width 80%
+    height 50%
+    left 10%
+    background-color #1E2021
+    color #CF2626
+    margin-left 3px
+    border-radius 10px
+    font-family "Orbitron"
+
+#start 
+    position relative
+    background-color rgb(64, 211, 78)
+    width 40%
+    height 20%
+    border-radius 50%
+    left 25%
+    border 3px solid #484A4A
+    cursor pointer
+
+#strict
+    position relative
+    background-color #018EDF
+    width 40%
+    height 20%
+    border-radius 50%
+    left 25%
+    border 3px solid #484A4A
+    cursor pointer
+
+.text
+    font-size .4em
+
+.dgrn
+    background-color #40D34E
+    cursor pointer
+
+.lgrn
+    background-color #7AE184
+
+.dred
+    background-color rgb(250, 41, 21)
+    cursor pointer
+
+.lred
+    background-color #FC6C5F;
+
+.dblue
+    background-color #018EDF
+    cursor pointer
+
+.lblue
+    background-color #48BBFE
+
+.dylw
+    background-color #F4F401
+    cursor pointer
+
+.lylw
+    background-color #FEFE5D
+
+#winner 
+    centerer()
+    width 40%
+    height 40%
+    text-align center 
+
+#winner > p 
+    width 100%
+    font-size 1.5em
+
+#restart
+    position relative 
+    top 20%
