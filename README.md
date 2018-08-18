@@ -1,5 +1,6 @@
 # Simon
-Simon Says game
+
+Demo: https://codepen.io/nasatex/full/mpdedd/
 
 The game "Simon Says" made using Javascript and eventpause (http://ignitersworld.com/lab/eventPause.html). The game has a "Strict" player
 option meaning that one mistake, and you don't get any more redos. 
